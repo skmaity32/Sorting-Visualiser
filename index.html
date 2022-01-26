@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting Visualiser</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    <h1 id="heading">Sorting Visualizer</h1>
+    <div>
+        <div id="div_input">
+            <div class="inputs">
+                <label for="arr_size">Size of the array:</label>
+                <input id="arr_size" type="range" min=20 max=150 step=1 value=30>
+                <label for="algo_speed">Speed of the algorithm:</label>
+                <input id="algo_speed" type="range" min=1 max=5 step=1 value=4>
+            </div>
+            
+            <div class="buttons">
+                <button class="btn btn-success" id="arr_generate">Reset!</button>
+                <div class="algos">
+                    <button class="btn btn-primary">Bubble Sort</button>
+                    <button class="btn btn-primary">Selection Sort</button>
+                    <button class="btn btn-primary">Insertion Sort</button>
+                    <button class="btn btn-primary">Merge Sort</button>
+                    <button class="btn btn-primary">Quick Sort</button>
+                    <button class="btn btn-primary">Heap Sort</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section>
+        <div id="info1">
+            <p>First Container</p>
+        </div>
+
+        <div id="array_container">
+            
+        </div>
+
+        <div id="info2">
+            <p>Second Container</p>
+        </div>
+    </section>
+
+    <script src="./Scripts/main.js"></script>   <!--This should be at the end of body and should be loaded before sorts.js-->
+    <script src="./Scripts/visualizations.js"></script>  <!--This should be loaded after main.js-->
+
+    <script src="./Scripts/bubble_sort.js"></script>
+</body>
+</html>
