@@ -51,7 +51,7 @@ function generateArray() {
         divs[i] = document.createElement("div");
         container.append(divs[i]);
         marginSize = 0.1;
-        divs[i].style=" margin:" + marginSize + "%; background-color:" + initialColor + "; width:" + (100/arraySize - (2*marginSize)) + "%; height:" + (divHeights[i]) + "%;";
+        divs[i].style=`margin: ${marginSize}%; background-color: ${initialColor}; width: ${(100/arraySize - (2*marginSize))}%; height: ${(divHeights[i])}%;`;
     }
 }
 

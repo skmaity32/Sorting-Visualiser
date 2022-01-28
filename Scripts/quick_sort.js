@@ -41,7 +41,7 @@ const quickPartition = (low, high) => {
     heightUpdate(divs[i-1], divHeights[i-1], divs[low], divHeights[low]);
 
     // recursively low to i will be sorted first
-    for (let k = low; k <= i; k++) {
+    for (let k = low; k <= i && k <= high; k++) {
         divVisualise(divs[k], divs[k], sortedColor);
     }
 
