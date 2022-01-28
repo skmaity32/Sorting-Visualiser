@@ -76,10 +76,16 @@ function runAlgo() {
             selectionSort();
             break;
         case 'Insertion Sort':
-            // bubbleSort();
+            insertionSort();
             break;
         case 'Merge Sort':
-            // bubbleSort();
+            mergeSort();
+            break;
+        case 'Quick Sort':
+            quickSort();
+            break;
+        case 'Heap Sort':
+            heapSort();
             break;
     }
 }
