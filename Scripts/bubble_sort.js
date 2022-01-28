@@ -1,25 +1,33 @@
 const bubbleSort = function() {
     currDelay = 0;
-    // console.log('bubble sort started!');
 
     for (let i = 0; i < arraySize - 1; i++) {
         let j = 0;
+
         for (; j < arraySize - 1 - i; j++) {
-            divVisualise(divs[j], divs[j+1], 'yellow');         // compare visualise
+            // compare visualise
+            divVisualise(divs[j], divs[j+1], compareColor);
             
             if (divHeights[j] > divHeights[j+1]) {
-                divVisualise(divs[j], divs[j+1], 'red');        // misplace visualise
+                // misplace visualise
+                divVisualise(divs[j], divs[j+1], misplaceColor);
 
                 // swapping two divHeights
                 [divHeights[j], divHeights[j+1]] = [divHeights[j+1], divHeights[j]];
 
-                heightUpdate(divs[j], divHeights[j], divs[j+1], divHeights[j+1]);   // height update
+                // height update
+                heightUpdate(divs[j], divHeights[j], divs[j+1], divHeights[j+1]);
             }
             
-            divVisualise(divs[j], divs[j+1], 'darkslateblue');  // reset color
+            // reset color
+            divVisualise(divs[j], divs[j+1], initialColor);
         }
-        divVisualise(divs[j], divs[j], 'green');                // color update
+
+        // color update
+        divVisualise(divs[j], divs[j], sortedColor);
     }
-    divVisualise(divs[0], divs[0], 'green');
+    
+    // color update of 0-th index
+    divVisualise(divs[0], divs[0], sortedColor);
     enableButtons();
 }

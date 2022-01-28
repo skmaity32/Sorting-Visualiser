@@ -15,6 +15,11 @@ let speed = 1000;
 let delayTime = 10000 / speed;
 let currDelay = 0;
 
+const initialColor = 'darkslateblue';
+const misplaceColor = 'red';
+const compareColor = 'yellow';
+const sortedColor = 'green';
+
 const enableButtons = function() {
     setTimeout(() => {
         for (let button of algoButtons) {
@@ -46,7 +51,7 @@ function generateArray() {
         divs[i] = document.createElement("div");
         container.append(divs[i]);
         marginSize = 0.1;
-        divs[i].style=" margin:" + marginSize + "%; background-color: darkslateblue; width:" + (100/arraySize - (2*marginSize)) + "%; height:" + (divHeights[i]) + "%;";
+        divs[i].style=" margin:" + marginSize + "%; background-color:" + initialColor + "; width:" + (100/arraySize - (2*marginSize)) + "%; height:" + (divHeights[i]) + "%;";
     }
 }
 
