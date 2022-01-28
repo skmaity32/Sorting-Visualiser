@@ -9,8 +9,8 @@ speedRange.addEventListener('input', speedVisualise);
 
 const divVisualise = function(divs1, divs2, divColor) {
     setTimeout(() => {
-        divs1.style.backgroundColor = divColor;
-        divs2.style.backgroundColor = divColor;
+        divs1.style.backgroundColor = `${divColor}`;
+        divs2.style.backgroundColor = `${divColor}`;
     }, currDelay += delayTime)
 }
 
