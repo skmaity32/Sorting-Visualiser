@@ -1,6 +1,5 @@
-const bubbleSort = function() {
+const selectionSort = function() {
     currDelay = 0;
-    // console.log('bubble sort started!');
 
     for (let i = 0; i < arraySize - 1; i++) {
         let j = 0;

@@ -1,5 +1,11 @@
-let delayTime = 10;
-let currDelay = 0;
+const speedVisualise = function() {
+    speed = this.valueAsNumber;
+    speed = Math.pow(10, speed);
+    delayTime = 10000 / speed;
+    speedLabel.textContent = `Speed : ${this.value}`;
+}
+
+speedRange.addEventListener('input', speedVisualise);
 
 const divVisualise = function(divs1, divs2, divColor) {
     setTimeout(() => {
