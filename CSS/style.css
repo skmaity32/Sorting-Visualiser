@@ -68,3 +68,12 @@ section #array_container {
     display: flex;
     align-items: center;
 }
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    font-size: large;
+    font-weight: bold;
+}
