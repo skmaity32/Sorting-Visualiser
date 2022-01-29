@@ -1,24 +1,27 @@
 body {
-    background-color: rgb(193, 255, 250);
+    font-family: 'Open Sans', 'Roboto', sans-serif;
+    background-color: rgb(255, 255, 255);
 }
 
 #heading {
+    color: rgb(162, 255, 235);
     text-align: center;
 }
 
 section {
     display: flex;
     flex-direction: row;
-    padding: 1rem;
+    justify-content: space-between;
+    padding-top: 1rem;
 }
 
 section #array_container {
-    background-color: rgb(250, 229, 189);
+    background-color: rgb(255, 255, 255);
     display: flex;
     flex-direction: row;
     align-items: flex-end;
-    width: 60%;
-    margin: 0 auto;
+    flex: 1;
+    max-width: 50%;
     height: 70vh;
 }
 
@@ -26,7 +29,8 @@ section #array_container {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    height: 5vh;
+    font-size: 1.1rem;
+    font-weight: bold;
 }
 
 .buttons {
@@ -34,6 +38,33 @@ section #array_container {
     flex-direction: row;
     justify-content: space-evenly;
     align-items: flex-end;
+    flex-wrap: wrap;
     height: 5vh;
+    padding-top: 0.5rem;
 }
 
+#info1, #info2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+    max-width: 25%;
+}
+
+#algo_heading, #performance_heading {
+    font-size: x-large;
+    text-align: center;
+    font-weight: bold;
+}
+
+.performance, #algo_description {
+    margin: 1.5rem;
+    font-size: large;
+    font-style: italic;
+    font-weight: bold;
+}
+
+#reset_div {
+    display: flex;
+    align-items: center;
+}
