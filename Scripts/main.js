@@ -200,8 +200,8 @@ function addQuickSortPerformance() {
 function addHeapSortDescription() {
     algoHeading.textContent = 'Heap Sort';
     algoDesc.innerHTML = `<a href="https://en.wikipedia.org/wiki/Heapsort">Heap Sort</a> 
-                        can be thought of as an improved selection sort that uses the heap data structure rather 
-                        than a linear-time search to find the maximum or minimum element.
+                        can be thought of as an improved selection sort that uses the heap data structure to find the 
+                        maximum or minimum element.
                         In the first step, a heap is built out of the data. The heap is often placed in an array with the 
                         layout of a complete binary tree. In the second step, a sorted array is created by repeatedly 
                         removing the largest element from the heap (the root of the heap), and inserting it into the array. 
